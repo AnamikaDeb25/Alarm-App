@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:scrollbarTrackHorizontal="@color/teal_200"
+    tools:context=".MainActivity">
+
+
+    <TimePicker
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="372dp"
+        android:headerBackground="@color/cardview_shadow_start_color"
+
+        />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="15dp"
+        android:text="Set alarm at:"
+        android:textAllCaps="true"
+        android:textColor="#9B2BAE"
+        android:textSize="25sp"
+         />
+
+    <EditText
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="22dp"
+        android:hint="24 hour"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="22dp"
+        android:hint="minutes"
+        android:inputType="time" />
+</LinearLayout >
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        android:text="Confirm alarm"
+        app:backgroundTint="#B364DF"
+        app:icon="@android:drawable/ic_lock_idle_alarm" />
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="15dp"
+        android:text="Back to clock"
+        app:backgroundTint="#B364DF"
+        app:icon="?attr/actionModeCloseDrawable" />
+
+
+
+
+</LinearLayout >
